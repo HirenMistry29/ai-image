@@ -3,9 +3,8 @@ import Header from '../components/header/header';
 import Sidebar from '../components/L-sidebar/sidebar';
 import RefImg from '../components/L-sidebar/refImg';
 import RSidebar from '../components/R-sidebar/sidebar';
-// import ContainerHeader from '../components/container/header';
+import ContainerHeader from '../components/container/header';
 import Room from '../components/L-sidebar/room';
-import ContainerHeaderPg3 from '../components/container/header-pg3';
 
 const Pg2 = () => {
     return(
@@ -14,7 +13,7 @@ const Pg2 = () => {
           <Header/>
             <div className="relative flex flex-col justify-between gap-32 items-center pt-20 pb-24 px-56">
               <RSidebar/>
-              <ContainerHeaderPg3/>
+              <ContainerHeader/>
             <div className="shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] w-[22%] h-[76%] absolute top-0 left-0 flex flex-col items-start" id="Left" >
                   <Sidebar/>
                 {/* <div className="relative flex flex-col justify-end w-[372px] pt-[575px] gap-[80px]"> */}
@@ -39,9 +38,9 @@ const Pg2 = () => {
     </div>
 
 {/* SLIDER IMAGE LOGIC */}
-    <div className="shadow-[12px_12px_4px_0px_rgba(0,_0,_0,_0.25)] relative flex flex-col mr-18 w-2/3" id="Center" >
+    <div className={`${ ``/*shadow-[12px_12px_4px_0px_rgba(0,_0,_0,_0.25)] */} relative flex flex-col mr-18 w-2/3`} id="Center" >
       <div
-        className="bg-[#d9d9d9] relative flex flex-col items-start pt-[333px] pb-[324px] px-64 rounded"
+        className={`${''/*bg-[#d9d9d9]*/} relative flex flex-col items-start pt-[333px] pb-[324px] px-64 rounded`}
         id="Image1"
       >
         {/* { SLIDER IMAGE } */}
@@ -77,3 +76,5 @@ const Pg2 = () => {
 }
 
 export default Pg2;
+
+

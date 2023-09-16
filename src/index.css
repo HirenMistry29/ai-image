@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'poppins-font';
+
+/* @import 'poppins-font'; */
 
 body { 
   background: #2B2C2E;
-  font-family: 'Poppins';
+  /* font-family: 'Poppins'; */
 }
 
 /* code {
